@@ -3,7 +3,6 @@ import random
 print('Welcome to the number guessing game! \nYou have 5 attempts to win the game between 50 to 100 \nGood luck!')
 
 number_to_guess = random.randrange(50,100)
-print(number_to_guess)
 chance:int = 5
 guess_counter = 0
 
