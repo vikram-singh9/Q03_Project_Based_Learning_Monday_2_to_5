@@ -1,7 +1,16 @@
+
 [project]
-name = "password-generator"
+name = "password-generator" #Or Whatever your project name is.
 version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
-requires-python = ">=3.12"
-dependencies = []
+description = "Password generator Streamlit app"
+authors = ["vikram singh <vikram.dev.co@gmail.com>"]
+package-mode = false # Add this line
+
+[tool.poetry.dependencies]
+python = "^3.8"
+streamlit = "^1.25.0" #or your streamlit version.
+# Add any other dependencies here
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
