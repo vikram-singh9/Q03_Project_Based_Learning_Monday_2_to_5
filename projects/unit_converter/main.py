@@ -2,7 +2,7 @@ import streamlit as st # importing streamlit as st keyword
 
 def convert_units(value, unit_from, unit_to):
 
-    conversions = {
+    conversions = { # these are the predefined units 
         "grams_kilograms" : 0.001,
         "kilograms_grams" : 1000,
         "meters_kilometers" : 0.001,
