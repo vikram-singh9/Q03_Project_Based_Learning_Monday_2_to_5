@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st # importing streamlit as st keyword
 
 def convert_units(value, unit_from, unit_to):
 
@@ -12,6 +12,8 @@ def convert_units(value, unit_from, unit_to):
         "meters_meters":1,
         "kilometers_kilometers":1
     }
+
+    # logic to create a units from and to
     key = f"{unit_from}_{unit_to}"
 
     if key in conversions:
@@ -21,7 +23,7 @@ def convert_units(value, unit_from, unit_to):
         return "conversion not supported."
     
 
-st.title("Unit Converter💛")
+st.title("Unit Converter💛") # title of my app using built in streamlit function
     
 value = st.number_input("Enter the Value: ", min_value=1.0, step=1.0)
 
