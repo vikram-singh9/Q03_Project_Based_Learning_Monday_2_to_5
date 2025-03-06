@@ -25,12 +25,12 @@ def convert_units(value, unit_from, unit_to):
 
 st.title("Unit Converter💛") # title of my app using built in streamlit function
     
-value = st.number_input("Enter the Value: ", min_value=1.0, step=1.0)
+value = st.number_input("Enter the Value: ", min_value=1.0, step=1.0) # user input 
 
-unit_from = st.selectbox("Convert from", ["meters", "kilometers", "grams", "kilograms"])
+unit_from = st.selectbox("Convert from", ["meters", "kilometers", "grams", "kilograms"]) # selecting from value 
 
-unit_to = st.selectbox("Convert to", ["meters", "kilometers", "grams", "kilograms"])
+unit_to = st.selectbox("Convert to", ["meters", "kilometers", "grams", "kilograms"]) # selecting to value
 
-if st.button("Convert"):
-    result = convert_units(value, unit_from, unit_to)
-    st.write(f"Converted Units: {result}")
+if st.button("Convert"): # button to trigger the function
+    result = convert_units(value, unit_from, unit_to) # storing function in the variable
+    st.write(f"Converted Units: {result}") # printing the converted unit OUTPUT
