@@ -20,7 +20,7 @@ def convert_units(value, unit_from, unit_to):
         conversion = conversions[key]
         return value * conversion
     else:
-        return "conversion not supported."
+        return "conversion not supported." # esle statement if user selected wrong input
     
 
 st.title("Unit Converter💛") # title of my app using built in streamlit function
