@@ -9,7 +9,7 @@ def generate_money ():
 st.subheader("Instant Money Generating Machine")
 if st.button("Generate Money"):
     st.write("Counting Money...")
-    time.sleep(1)
+    time.sleep(5)
     amount = generate_money()
     st.success(f"You made ${amount} today!😍")
 
