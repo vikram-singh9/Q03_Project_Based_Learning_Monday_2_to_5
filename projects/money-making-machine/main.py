@@ -21,7 +21,14 @@ def fetch_side_hutles():
             hustles = response.json()
             return hustles
         else:
-            return st.w
+            return ("freelacing")
     except:
-        return st.write("Something went wrong")
+        return ("Something went wrong")
+    
+
+st.subheader("Side hustles ideas")
+if st.button("Generate Hustles"):
+    idea = fetch_side_hutles()
+    st.success(idea)
+
 
