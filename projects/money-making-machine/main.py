@@ -29,6 +29,25 @@ def fetch_side_hutles():
 st.subheader("Side hustles ideas")
 if st.button("Generate Hustles"):
     idea = fetch_side_hutles()
-    st.success(idea)
+    st.info(idea)
+
+
+
+def fetch_money_quotes ():
+    try:
+        response = requests.get("http://127.0.0.1:8000/money_quotes")
+        if response.status_code == 200:
+            money_quotes = response.json()
+            return money_quotes
+        else:
+            return ("no money quotes avalaible")
+    except:
+        return ("no money quotes!")
+
+st.subheader("Money Quotes")
+if st.button("Generate Money Quotes"):
+    mq = fetch_money_quotes()
+    st.info(mq)
+
 
 
