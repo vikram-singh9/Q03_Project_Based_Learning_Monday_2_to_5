@@ -2,11 +2,11 @@ import streamlit as st
 import random
 import requests
 import time
-st.title("Money Making Machine")
+st.title("💸Money Making Machine")
 
 def generate_money ():
     return random.randint(1,10000)
-st.subheader("Instant Money Generating Machine")
+st.subheader("Instant Money Generating Machine 🙀")
 if st.button("Generate Money"):
     st.write("Counting Money...")
     time.sleep(5)
@@ -26,7 +26,7 @@ def fetch_side_hutles():
         return ("Something went wrong")
     
 
-st.subheader("Side hustles ideas")
+st.subheader("Side Hustles Ideas🥱")
 if st.button("Generate Hustles"):
     idea = fetch_side_hutles()
     st.info(idea)
@@ -44,7 +44,7 @@ def fetch_money_quotes ():
     except:
         return ("no money quotes!")
 
-st.subheader("Money Quotes")
+st.subheader("Money Quotes 😶")
 if st.button("Generate Money Quotes"):
     mq = fetch_money_quotes()
     st.info(mq)
