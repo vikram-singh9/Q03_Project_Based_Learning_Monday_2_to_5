@@ -16,7 +16,7 @@ TIME_ZONE = [
    
 ]
 
-st.title("Time Zone App ⌚")
+st.title("Time Zone App")
 
 selected_timezones = st.multiselect("Select Time Zone", TIME_ZONE, default=["UTC","Asia/Karachi"])
 st.subheader("Selected Timezones")
