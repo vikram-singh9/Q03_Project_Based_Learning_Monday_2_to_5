@@ -5,4 +5,4 @@ app = FastAPI()
 
 
 def get_items():
-    return {items:}
+    return {"items": [{"name": "Foo"}, {"name": "Bar"}]}
